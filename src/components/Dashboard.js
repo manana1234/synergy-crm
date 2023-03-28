@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, Link, Redirect } from 'react-router-dom';
 import { RoleContext } from '../contexts/RoleContext';
 import CustomerInput from './CustomerInput';
 import ProductSalesInput from './ProductSalesInput';
