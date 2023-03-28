@@ -1,9 +1,13 @@
-APP OVERVIEW: Login / Registration Page for Sales reps & Manager (Email & Password Registration). Need managers to have access to separate back-end dashboard/tools (Manager will have heightened permissions).
+APP OVERVIEW: 
+
+Login / Registration Page for Sales reps & Manager (Email & Password Registration). Need managers to have access to separate back-end dashboard/tools (Manager will have heightened permissions).
 
 Sales rep dashboard needs the following functionality: Input customers into CRM (see and edit previous customers), ability to select a customer to apply a sale to (choose customer from CRM tool, and select product that's being sold). There needs to be a separate product database that includes products and commission for selling the product, which is used to calculate the sales rep commission (Manager controls products in this database & commission for each product from his dashboard. The commission needs to be updated when a product is sold, and displayable in total commission by (day, week, month, current pay period, previous pay period) using previous and current rep product sales data in the sales reps dashboard. The reps also need the ability to logout of their dashboard after logging in.
 
 Manager dashboard functionality: Read/write permissions of sales rep CRM customer data, and ability to select products that can be chosen to be sold by sales rep. Ability to see ALL customers that have been inputted by the sales reps (a 'master crm'). Ability to see sales history of the sales rep by Rep ID (each sales rep will have a unique ID so that sales data belongs to that sales rep / ID alone), and the company as a whole (all rep sales data, organized neatly). Ability to organize product sales and commission data by time period for individual reps, and the company as a whole (daily, weekly, monthly, this pay period, etc.) Ability to add/remove sales reps from the database, but keep their customer data in the 'master crm' before deleting the sales rep from the database. Manager will also need a logout from dashboard.
 
+
+MAIN FILES / FUNCTIONS: 
 
 src/firebase.js: Firebase configuration file
 
