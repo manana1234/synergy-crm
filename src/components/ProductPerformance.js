@@ -6,7 +6,7 @@ const ProductPerformance = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const productSnapshot = await firestore.collection('products').get();
+      const productSnapshot = await db.collection('products').get();
 
       setProducts(
         productSnapshot.docs.map((doc) => ({

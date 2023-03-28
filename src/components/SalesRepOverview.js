@@ -6,7 +6,7 @@ const SalesRepOverview = () => {
 
   useEffect(() => {
     const fetchSalesReps = async () => {
-      const salesRepSnapshot = await firestore.collection('salesReps').get();
+      const salesRepSnapshot = await db.collection('salesReps').get();
 
       setSalesReps(
         salesRepSnapshot.docs.map((doc) => ({

@@ -6,8 +6,8 @@ const SalesDataTable = () => {
 
   useEffect(() => {
     const fetchSalesData = async () => {
-      const salesRepRef = firestore.collection('salesReps').doc(auth.currentUser.uid);
-      const salesSnapshot = await firestore
+      const salesRepRef = db.collection('salesReps').doc(auth.currentUser.uid);
+      const salesSnapshot = await db
         .collection('sales')
         .where('salesRep', '==', salesRepRef)
         .get();
