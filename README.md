@@ -7,7 +7,7 @@ Sales rep dashboard needs the following functionality: Input customers into CRM 
 Manager dashboard functionality: Read/write permissions of sales rep CRM customer data, and ability to select products that can be chosen to be sold by sales rep. Ability to see ALL customers that have been inputted by the sales reps (a 'master crm'). Ability to see sales history of the sales rep by Rep ID (each sales rep will have a unique ID so that sales data belongs to that sales rep / ID alone), and the company as a whole (all rep sales data, organized neatly). Ability to organize product sales and commission data by time period for individual reps, and the company as a whole (daily, weekly, monthly, this pay period, etc.) Ability to add/remove sales reps from the database, but keep their customer data in the 'master crm' before deleting the sales rep from the database. Manager will also need a logout from dashboard.
 
 
-MAIN FILES / FUNCTIONS: 
+CURRENT FILES / FUNCTIONS: 
 
 src/firebase.js: Firebase configuration file
 
