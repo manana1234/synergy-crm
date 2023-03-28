@@ -1,3 +1,9 @@
+APP OVERVIEW: Login / Registration Page for Sales reps & Manager (Email & Password Registration). Need managers to have access to separate back-end dashboard/tools (Manager will have heightened permissions).
+
+Sales rep dashboard needs the following functionality: Input customers into CRM (see and edit previous customers), ability to select a customer to apply a sale to (choose customer from CRM tool, and select product that's being sold). There needs to be a separate product database that includes products and commission for selling the product, which is used to calculate the sales rep commission (Manager controls products in this database & commission for each product from his dashboard. The commission needs to be updated when a product is sold, and displayable in total commission by (day, week, month, current pay period, previous pay period) using previous and current rep product sales data in the sales reps dashboard. The reps also need the ability to logout of their dashboard after logging in.
+
+Manager dashboard functionality: Read/write permissions of sales rep CRM customer data, and ability to select products that can be chosen to be sold by sales rep. Ability to see ALL customers that have been inputted by the sales reps (a 'master crm'). Ability to see sales history of the sales rep by Rep ID (each sales rep will have a unique ID so that sales data belongs to that sales rep / ID alone), and the company as a whole (all rep sales data, organized neatly). Ability to organize product sales and commission data by time period for individual reps, and the company as a whole (daily, weekly, monthly, this pay period, etc.) Ability to add/remove sales reps from the database, but keep their customer data in the 'master crm' before deleting the sales rep from the database. Manager will also need a logout from dashboard.
+
 
 src/firebase.js: Firebase configuration file
 
@@ -31,76 +37,3 @@ src/components/SalesHistory.js: Component to display sales history by Rep ID and
 
 src/components/SalesRepManager.js: Component to add/remove sales reps from the database while preserving their customer data in the 'master CRM'
 
-
-
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
