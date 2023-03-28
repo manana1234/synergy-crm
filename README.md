@@ -1,3 +1,39 @@
+
+src/firebase.js: Firebase configuration file
+
+src/App.js: Main application file with routing and role context
+
+src/contexts/RoleContext.js: Context for storing the user's role (sales rep or manager)
+
+src/components/Login.js: Component for user login with role selection
+
+src/components/ProtectedRoute.js: Component for protecting routes based on authentication
+
+src/components/Dashboard.js: Component to display different dashboard content based on the user's role
+
+src/components/CustomerInput.js: Component for sales reps to input and edit customer information
+
+src/components/ProductSalesInput.js: Component for sales reps to input product sales
+
+src/components/SalesDataTable.js: Component for displaying the sales rep's customer data in a table
+
+src/components/Logout.js: Component to handle user logout
+
+src/components/CommissionDisplay.js: Component to display the sales rep's commission by day, week, and month
+
+src/components/ManagerDashboard.js: Component for the manager's dashboard layout and components
+
+src/components/AllCustomers.js: Component to display all customers in the 'master CRM' for the manager
+
+src/components/ProductManager.js: Component to manage products that can be chosen to be sold by sales reps
+
+src/components/SalesHistory.js: Component to display sales history by Rep ID and for the company as a whole
+
+src/components/SalesRepManager.js: Component to add/remove sales reps from the database while preserving their customer data in the 'master CRM'
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
