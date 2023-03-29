@@ -13,6 +13,8 @@ src/firebase.js: Firebase configuration file
 
 src/App.js: Main application file with routing and role context
 
+### src/contexts/AuthContext.js: NOT SURE IF NEEDED?? 
+
 src/contexts/RoleContext.js: Context for storing the user's role (sales rep or manager)
 
 src/components/Login.js: Component for user login with role selection
