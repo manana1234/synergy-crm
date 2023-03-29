@@ -6,11 +6,11 @@ export const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState(null);
 
-  const signup = (email, password) => {
-    return auth
+  const signup = async (email, password) => {
+    return await auth
       .createUserWithEmailAndPassword(email, password)
       .then((userCredential) => {
-        // Signed in 
+        // Signed in
         const user = userCredential.user;
         setCurrentUser(user);
         return user;
@@ -26,7 +26,7 @@ export const AuthProvider = ({ children }) => {
   // Rest of the code here
 
   return (
-    <AuthContext.Provider value={{ currentUser, signup }}>
+    <AuthContext.Provider value={{ currentUser, signup, setCurrentUser }}>
       {children}
     </AuthContext.Provider>
   );

@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { db } from '../firebase';
+import React, { useEffect, useState } from "react";
+import { db } from "../firebase";
 
-function CommissionDisplay() {
+const CommissionDisplay = () => {
   const [commissions, setCommissions] = useState([]);
 
   useEffect(() => {
-    db.collection('commissions')
-      .orderBy('timestamp', 'desc')
+    db.collection("commissions")
+      .orderBy("timestamp", "desc")
       .onSnapshot((snapshot) => {
         setCommissions(
           snapshot.docs.map((doc) => ({
@@ -28,6 +28,6 @@ function CommissionDisplay() {
       ))}
     </div>
   );
-}
+};
 
 export default CommissionDisplay;
